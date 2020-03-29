@@ -39,8 +39,7 @@
                 <%= link_to '投稿フォーム', new_post_image_path %>
               </li>
               <li class="">
-                <!-- ↓以下のコードは、5章で正しいroutingに書き直します。 -->
-                <%= link_to 'マイページ', "#" %>
+                <%= link_to 'マイページ', user_path(current_user.id) %>
               </li>
             <% else %>
               <li class="">
@@ -69,7 +68,7 @@
               善良な市民同士で無差別に食欲を煽るSNS
           </p>
               <%= image_tag('logo-white.png') %>
-              
+
             </div>
           </div>
           <div class="col-md-2">
@@ -88,6 +87,6 @@
         </div>
       </div>
     </footer>
-    
+
   </body>
 </html>
